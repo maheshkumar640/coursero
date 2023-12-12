@@ -5,6 +5,8 @@ import { CorporateComponent } from './corporate/corporate.component';
 import { BussinessComponent } from './bussiness/bussiness.component';
 import { PrivatecComponent } from './privatec/privatec.component';
 import { HomemainComponent } from './homemain/homemain.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @Component({
     selector: 'app-root',
@@ -19,7 +21,9 @@ import { HomemainComponent } from './homemain/homemain.component';
        HomemainComponent,
        PrivatecComponent,
        CorporateComponent,
-       BussinessComponent
+       BussinessComponent,
+       ContactusComponent,
+       NavigationComponent
     ]
 })
 export class AppComponent {

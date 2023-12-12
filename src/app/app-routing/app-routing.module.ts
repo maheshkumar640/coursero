@@ -5,6 +5,7 @@ import { PrivatecComponent } from '../privatec/privatec.component';
 import { BussinessComponent } from '../bussiness/bussiness.component';
 import { CorporateComponent } from '../corporate/corporate.component';
 import { HomemainComponent } from '../homemain/homemain.component';
+import { ContactusComponent } from '../contactus/contactus.component';
 
 @NgModule({
   declarations: [
@@ -18,5 +19,6 @@ export const routes: Routes = [
   {path:"",component:HomemainComponent},
   {path:'privatec', component: PrivatecComponent},
   {path:'bussiness', component: BussinessComponent},
-  {path:'corporate', component:CorporateComponent}
+  {path:'corporate', component:CorporateComponent},
+  {path:'contactus', component: ContactusComponent}
 ];

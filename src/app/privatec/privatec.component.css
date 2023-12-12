@@ -92,16 +92,13 @@ p{
     flex-direction: column;
     align-items: center;
     text-align: center;
-
-    height: 50vh;
+    height: 18vw;
     justify-content: center;
-    /* border: 1px solid red; */
-    /* background-color:grey; */
 }
 .mid-up{
-    font-size: 15px;
+    font-size: 18px;
     color: black;
-    font-weight: 500;
+    font-weight: 600;
 }
 .mid-tx{
     margin: 0 20px 0 20px;
@@ -116,11 +113,11 @@ p{
 
 }
 .under-txt{
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
+    display:content;
+    margin: 0 26% 0 26%;
     align-items: center;
     text-align: center;
+    padding: 10px;
     justify-content:center ;
     color: black;
 
