@@ -60,12 +60,32 @@ p{
     font-size: 15px;
     font-weight: 500;
 }
-button{
-    padding: 13px;
-    border-radius: 5px;
-    border: 1px solid red;
+.rcall{
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: 600;
+    background-color:transparent;
+}
+.rcall:hover{
+    animation-name: 'rcall';
+    position: relative;
+    background-color: lightgreen;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    cursor: pointer;
     border: none;
-    background-color: orange;
+     font-weight: 600;
+}
+@keyframes rcall{
+    from{
+        width: 160px ;
+    }
+       to{
+        width: 200px;
+           
+    }
 }
 .container-mid{
     display: flex;
@@ -162,9 +182,9 @@ b{
 .featured-clientele{
     margin-top: 40px;
 }
-.features-sec{
+/* .features-sec{ */
     /* width: fit-content; */
-}
+/* } */
 .heading{
      text-align: center;
      font-size: 26px;
@@ -256,9 +276,21 @@ b{
     font-size: 1vw;
 
 }
-input:focus{
-    border:lightblue;
-}
+input[type=text], input[type=no], input[type=number], input[type=date], input[type=email], input[type=time],textarea[type=text]  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  input[type=text]:focus, input[type=no]:focus, input[type=number]:focus, input[type=date]:focus, input[type=email]:focus, input[type=time]:focus,textarea[type=text]:focus {
+    border: 2px solid lightblue;
+    background: white;
+  }
 input{
     border-radius: 10px;
     width: 17vw;
@@ -277,10 +309,6 @@ input{
     
 }
 
-input[type=text]:focus input[type=date]:focus{
-    /* background-color: #ddd; */
-    outline: lightblue;
-  }
   .col-line{
     display: flex;
     width: 90%;
@@ -292,23 +320,40 @@ input[type=text]:focus input[type=date]:focus{
     align-items: center;
 }
 .req-calls{
+    border: 1px solid;
+    padding: 15px;
+    background-color:transparent;
     border-radius: 18px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    color: white;
+    /* width: 50%; */
+    color: black;
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 30px;
   }
   .req-calls:hover{
+    animation-name: 'req-calls';
     cursor: pointer;
     background-color: lightgreen;
     transition: 0.8s ease-out;
     color: black;
     font-weight: 600;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    border: none;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
     
+}
+@keyframes req-calls{
+    from{
+        width: 200px;
+    }
+    to{
+        width: 600px;
+    }
 }
 .r-line{
     justify-content: center;
@@ -324,25 +369,19 @@ input[type=text]:focus input[type=date]:focus{
     font-size: 20px;
 }
 .col-1-1{
-    /* border: 1px solid green; */
-    margin:  10px 1% 0 1%;
+    /* border: 2px solid; */
+    margin-right: 10px;
+    margin-top: 10px;
     width: 100%;
     
-}
-.col-1-1{
-    width: 100%;
-    /* padding: 10px; */
-    margin:  5px 0 0 4px;
-    /* display: inline-block; */
-    /* border: 2px solid red; */
-
 }
 .col-1-1 label{
     margin-left: 30px;
 }
 .textaream{
+    border: 2px solid red;
     background: #f1f1f1;
-    margin: 0 0 0 30px;
+
 }
 
  .f-head{
@@ -381,3 +420,7 @@ input[type=text]:focus input[type=date]:focus{
      justify-content: center;
      flex-direction: column;
  }
+
+ /* @media screen {
+    
+ } */

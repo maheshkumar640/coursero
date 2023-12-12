@@ -19,7 +19,8 @@ import { HomemainComponent } from './homemain/homemain.component';
        HomemainComponent,
        PrivatecComponent,
        CorporateComponent,
-       BussinessComponent]
+       BussinessComponent
+    ]
 })
 export class AppComponent {
   title = 'coursero';
